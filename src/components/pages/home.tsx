@@ -88,7 +88,7 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    const tilesMap: TileProps[] = profis.map((profi, idx) => ({
+    const tilesMap: TileProps[] = profis.map((profi) => ({
       imageUrl: profi.picture.large,
       text: `${profi.name.first} ${profi.name.last}`,
       tileSize: 256,
